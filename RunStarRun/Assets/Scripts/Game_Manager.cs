@@ -14,7 +14,6 @@ public class Game_Manager : MonoBehaviour
 	public GameState GS;
 	public int GameLv;
 	public float GameSpeed;
-	public Box_Loop _BL;
 	public Scroll_Mapping _SM;
 
 
@@ -43,7 +42,6 @@ public class Game_Manager : MonoBehaviour
 	
 	void Start ()
 	{
-		GameSpeed = _BL.Speed;
 		SCREENSETTING ();
 	}
 
@@ -134,7 +132,7 @@ public class Game_Manager : MonoBehaviour
 		Meter_Label.text = string.Format ("{0:N0}<color=#ff3366> m</color>", Meter);
 
 		//시간이 지날수록 속도가 점점 빨라지게 한다.
-
+		/*
 		if (Meter >= 50 && GameLv == 1) {
 			GameLevelUp ();
 		}
@@ -157,7 +155,7 @@ public class Game_Manager : MonoBehaviour
 
 		if (Meter >= 300 && GameLv == 6) {
 			GameLevelUp ();
-		}
+		}*/
 	}
 
 	public void GameLevelUp ()
@@ -165,6 +163,5 @@ public class Game_Manager : MonoBehaviour
 		GameLv += 1;
 		GameSpeed += 3;
 		_SM.ScrollSpeed += 0.1f;
-		_BL.Speed = GameSpeed;
 	}
 }

@@ -4,7 +4,7 @@ using System.Collections;
 public class Scroll_Mapping : MonoBehaviour
 {
 	
-	public float ScrollSpeed = 0.5f;
+	public float ScrollSpeed = 0.2f;
 	float Offset;
 	
 	void Update ()

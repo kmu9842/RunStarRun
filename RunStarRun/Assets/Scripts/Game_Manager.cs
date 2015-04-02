@@ -25,7 +25,7 @@ public class Game_Manager : MonoBehaviour
 
 	//GUI 관련
 
-	public GUIText Gold_Label;
+	//public GUIText Gold_Label;
 	public GUIText Meter_Label;
 	public GUITexture Black_screen;
 	public GUIText result_Gold_Label;
@@ -123,13 +123,13 @@ public class Game_Manager : MonoBehaviour
 	public void GETCOIN ()
 	{
 		GetMoney += 1;
-		Gold_Label.text = string.Format ("{0:N0}", GetMoney);
+		//Gold_Label.text = string.Format ("{0:N0}", GetMoney);
 	}
 
 	public void METERUPDATE ()
 	{
 		Meter += Time.deltaTime * GameSpeed;
-		Meter_Label.text = string.Format ("{0:N0}<color=#ff3366> m</color>", Meter);
+		Meter_Label.text = string.Format ("{0:N0}", Meter);
 
 		//시간이 지날수록 속도가 점점 빨라지게 한다.
 		/*

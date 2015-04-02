@@ -15,7 +15,7 @@ public class Camera_Zoom : MonoBehaviour
 	{
 		
 		if (_player != null)
-			CameraSize = 5f + _player.transform.position.y;
+			//CameraSize = 5f + _player.transform.position.y;
 			
 		if (CameraSize >= MaxSize) {
 			CameraSize = MaxSize;

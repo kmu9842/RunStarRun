@@ -20,7 +20,7 @@ public class Game_Manager : MonoBehaviour
 	//계속 유동적인 수
 
 	public float Meter;
-	public int GetMoney = 0;
+	public int[] Item = new int[4];
 
 
 	//GUI 관련
@@ -36,6 +36,13 @@ public class Game_Manager : MonoBehaviour
 	public Texture Go_btn;
 	public Texture Replay_btn;
 	public Texture Main_btn;
+
+	public GUITexture Attack1_btn;
+	public GUITexture Attack2_btn;
+	public GUITexture Attack3_btn;
+	public GUITexture Attack4_btn;
+
+
 	public GameObject result_window;
 	float screenX;
 	float screenY;
@@ -51,6 +58,23 @@ public class Game_Manager : MonoBehaviour
 			METERUPDATE ();
 		}
 
+		if (Input.touchCount > 0) {
+			if (Attack1_btn.HitTest (Input.GetTouch (1).position)) {
+
+			}
+
+			else if (Attack2_btn.HitTest (Input.GetTouch (1).position)) {
+				
+			}
+
+			else if (Attack3_btn.HitTest (Input.GetTouch (1).position)) {
+				
+			}
+
+			else if (Attack4_btn.HitTest (Input.GetTouch (1).position)) {
+				
+			}
+		}
 	}
 	
 	void SCREENSETTING ()
@@ -116,13 +140,11 @@ public class Game_Manager : MonoBehaviour
 		GS = GameState.End;
 		_fade.FadeOut ();
 		result_window.gameObject.SetActive (true);
-		result_Gold_Label.text = string.Format ("{0:N0}", GetMoney);
 		result_Meter_Label.text = string.Format ("{0:N0}", Meter);
 	}
 	
 	public void GETCOIN ()
 	{
-		GetMoney += 1;
 		//Gold_Label.text = string.Format ("{0:N0}", GetMoney);
 	}
 

@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game_Manager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Camera_Zoom.cs" Line="18" Column="6" />
-      <File FileName="Assets\Scripts\Game_Manager.cs" Line="132" Column="44" />
-      <File FileName="Assets\Scripts\Player_Move.cs" Line="56" Column="54" />
+      <File FileName="Assets\Scripts\Game_Manager.cs" Line="37" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
